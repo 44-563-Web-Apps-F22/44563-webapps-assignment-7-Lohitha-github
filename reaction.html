@@ -12,7 +12,7 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Part 5: Use setTimeout to create a reaction game.  You will press a button to start a countdown. -->
+    <!---- Part 5: Use setTimeout to create a reaction game.  You will press a button to start a countdown. --->
     <div class="container text-center">
         <div class="container-fluid p-5 bg-secondary text-white text-center">
             <h1>Lohitha Julakanti Reaction Timer</h1>
@@ -42,6 +42,9 @@
     <!--Part 6: Add in the code to handle the count down and check against the time the reaction button was pressed. -->
     <script>
         function startTime() {
+          //bonus
+          let countdown = Math.floor(Math.random() * 9) + 2
+            console.log()
             for (let i = 0; i < 4; i++) {
                 setTimeout(() => {
                     document.getElementById("countdown").innerHTML = i
@@ -56,5 +59,7 @@
                 }
             }, 3000);
         }
+        
     </script>
 </body>
+</html>
